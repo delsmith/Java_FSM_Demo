@@ -28,7 +28,7 @@ public class State implements Action {
 		
 		// Transition valid: execute the Action then change State 
 		if ( t != null ) {
-			System.out.println(event+":"+this.name+" > "+t.next.name);
+			//System.out.println(event+":"+this.name+" > "+t.next.name);
 			if( t.action != null )
 				t.action.do_it(model);
 			return t.next;
