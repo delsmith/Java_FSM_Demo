@@ -6,6 +6,8 @@ import fsm.State;
 
 public class VF_FSM extends FSM {
 	
+	// TODO: may need a finalise() method to clean up if used in a non-stop application
+	
 	// Build the state table
 	public VF_FSM( VF_Model model ) {
 

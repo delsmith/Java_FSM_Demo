@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class State implements Action {
+
+	// TODO: may need a finalise() method to clean up if used in a non-stop application
+	
 	// define a Transiton class
 	private class Transition {
 		
@@ -14,6 +17,7 @@ public class State implements Action {
 	}
 	
 	// State attributes
+	@SuppressWarnings("unused")
 	private String name;						// the name of this state
 	private Map<String,Transition> options;		// defines state transitions for valid events
 	private State dfltState;					// default next state for invalid events

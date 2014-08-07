@@ -29,6 +29,8 @@ public class FSM {
 		finally {}
 	}
 
+	// TODO: may need a finalise() method to clean up if used in a non-stop application
+	
 	/*
 	 * configure FSM with the initial State and data model
 	 */
